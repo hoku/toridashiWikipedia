@@ -2,7 +2,8 @@ toridashiWikipedia
 ================
 
 **toridashiWikipedia** は、WikipediaのXMLデータからタイトルとカテゴリをサクッと抽出するためのスクリプトです。
-PHP製です。
+
+自然言語処理を行いたい時なんかに使えます。
 
 
 使い方
@@ -23,8 +24,15 @@ php toridashiWikipedia/GetWordsFromWikipedia.php jawiki-latest-pages-articles.xm
 
 # 待っていると、outディレクトリに抽出結果が吐き出される
 cd out
-ls -al
 ```
+
+
+実行パラメータ
+-----------
+
+* 第1引数 : WikipediaのXMLファイルパス
+* 第2引数 : 抽出結果の出力先ディレクトリパス
+* 第3引数 : 出力時の1ファイル当たりのデータ件数 (オプション。デフォルトは5000。)
 
 
 抽出結果
