@@ -20,7 +20,7 @@ bunzip2 jawiki-latest-pages-articles.xml.bz2
 git clone https://github.com/hoku/toridashiWikipedia.git
 
 # WikipediaのXMLからタイトルとカテゴリを抽出する
-php toridashiWikipedia/GetWordsFromWikipedia.php jawiki-latest-pages-articles.xml out 5000
+php toridashiWikipedia/toridashiWikipedia.php jawiki-latest-pages-articles.xml out 5000
 
 # 待っていると、outディレクトリに抽出結果が吐き出される
 cd out
